@@ -12,10 +12,6 @@ class App:
         self.root.title("Weather App")
         self.root.configure(bg="yellow")
         self.root.resizable(False,False)
-        # App Widgets 
-        self.img_1 = PhotoImage(file='c:/gui/sun and cloud.png')
-        self.img_2 = PhotoImage(file='c:/gui/sun and cloud.png')
-        self.img_3 = PhotoImage(file='c:/gui/sun.png')
         # Weather information widgets 
         self.label_2 = Label(self.root,bg='yellow')
         self.label_2.place(x=115,y=50)
@@ -54,13 +50,7 @@ class App:
         self.label_3.config(text='Tempature: '+self.temp)
         self.label_5.config(text='Location: '+self.location+', '+self.region)
         self.label_3.place(x=110,y=115)
-        # Checking weather condition
-        if self.data['current']['condition']['text'] == 'Partly cloudy':
-            self.label_2.config(image=self.img_1)
-        elif self.data['current']['condition']['text'] == 'Cloudly':
-            self.label_2.config(image=self.img_2)
-        elif self.data['current']['condition']['text'] == 'Sunny':
-            self.label_2.config(image=self.img_3)
+        # Printing api data in console 
         print(self.data)
                                                                                                                                                                                 
 if __name__ == "__main__":
