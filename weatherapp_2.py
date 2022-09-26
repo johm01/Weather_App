@@ -26,7 +26,7 @@ class App:
         self.label_4 = Label(self.root)
         self.label_4.place(x=65,y=300)
         self.label_5 = Label(self.root,bg='yellow')
-        self.label_5.place(x=105,y=185)
+        self.label_5.place(x=85,y=185)
         # Other widgets
         self.e_1 = Entry(self.root)
         self.e_1.place(x=65,y=300)
