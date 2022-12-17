@@ -26,10 +26,8 @@ class App:
         # Other widgets
         self.e_1 = Entry(self.root)
         self.e_1.place(x=65,y=300)
-        self.b_1 = Button(self.root,text='Enter',command=self.get_weather)
-        self.b_1.place(x=200,y=300)
-        self.logo = Label(self.root, text='Weather App!',bg='grey')
-        self.logo.place(x=115,y=25)
+        Button(self.root,text='Enter',command=self.get_weather).place(x=200,y=300)
+        Label(self.root, text='Weather App!',bg='grey').place(x=115,y=25)
         self.root.mainloop()
     
     # One function for all the Weather API stuff
