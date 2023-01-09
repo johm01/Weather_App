@@ -35,7 +35,7 @@ class App:
         # Getting the areacode from the entry 
         self.areacode = self.e_1.get()
         # Making a request to the weather API 
-        self.url = requests.get(f'http://api.weatherapi.com/v1/current.json?key=9882b06f04a14ed49fd02510222704&q={self.areacode}&aqi=no')
+        self.url = requests.get(f'http://api.weatherapi.com/v1/current.json?key=&q={self.areacode}&aqi=no')
         # Getting the weather API data
         self.data = self.url.json() 
         # Weather API data
